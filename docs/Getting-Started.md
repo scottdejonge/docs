@@ -273,6 +273,7 @@ npm run dist
 ```
 
 ## Examples
+
 <div class="row">
   <div class="column-1-4 column-small-1-2">
     <a class="example" href="examples/template.html" target="_blank">
