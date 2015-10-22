@@ -98,6 +98,21 @@
 	text-align: center;
 }
 
+.grid-item {
+	padding: 15px;
+	font-size: 12px;
+	font-weight: 600;
+	color: #656d78;
+	text-align: center;
+	background: #ccd1d9;
+}
+
+.grid-item .grid-item {
+    margin-bottom: 0;
+    color: #ffffff;
+    background: #656d78;
+}
+
 .arrow-boxes {
     margin: 0 auto;
     text-align: center;
