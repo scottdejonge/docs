@@ -62,6 +62,6 @@ IE8 does not fully support `box-sizing: border-box;` when combined with `min-wid
 
 Some CSS3 properties and HTML5 elements are not fully supported by Internet Explorer 8 and 9.
 
-{% include tables/browsers.html %}
+{% include tables/css.html %}
 
 Visit [Can I Use](http://caniuse.com/) for details on browser support of CSS3 and HTML5 features.
