@@ -9,8 +9,6 @@ permalink: /form/
 
 ### Simple Form
 
-{% example html %}
-
 <form role="form">
   <label for="form-simple-email">Email</label>
   <input type="email" id="form-simple-email" placeholder="Enter Email">
@@ -24,11 +22,22 @@ permalink: /form/
   <button type="submit" class="button">Submit</button>
 </form>
 
-{% endexample %}
+```html
+<form role="form">
+  <label for="form-simple-email">Email</label>
+  <input type="email" id="form-simple-email" placeholder="Enter Email">
+  <label for="form-simple-password">Password</label>
+  <input type="password" id="form-simple-password" placeholder="Enter Password">
+  <label class="control checkbox">
+    <input type="checkbox" name="checkbox" checked="true">
+    <span class="control-indicator"></span>
+    <span class="control-label">I agree to checking this checkbox</span>
+  </label>
+  <button type="submit" class="button">Submit</button>
+</form>
+```
 
 ### Multi-Column Form
-
-{% example html %}
 
 <form role="form">
   <div class="row">
@@ -54,7 +63,31 @@ permalink: /form/
   </div>
 </form>
 
-{% endexample %}
+```html
+<form role="form">
+  <div class="row">
+    <div class="column-1-2">
+      <label for="form-mulit-column-first-name">First Name</label>
+      <input type="text" id="form-mulit-column-first-name" placeholder="Enter First Name">
+    </div>
+    <div class="column-1-2">
+      <label for="form-mulit-column-last-name">Last Name</label>
+      <input type="text" id="form-mulit-column-last-name" placeholder="Enter Last Name">
+    </div>
+    <div class="column-1-2">
+      <label for="form-mulit-column-email">Email</label>
+      <input type="email" id="form-mulit-column-email" placeholder="Enter Email">
+    </div>
+    <div class="column-1-2">
+      <label for="form-mulit-column-password">Password</label>
+      <input type="password" id="form-mulit-column-password" placeholder="Enter Password">
+    </div>
+    <div class="column-1">
+      <button type="submit" class="button">Submit</button>
+    </div>
+  </div>
+</form>
+```
 
 ## Labels 
 
@@ -68,13 +101,13 @@ permalink: /form/
 @label-line-height: @line-height-medium;
 ```
 
-{% example html %}
-
 <form role="form">
   <label for="input">Label</label>
 </form>
 
-{% endexample %}
+```html
+<label for="input">Label</label>
+```
 
 ## Fieldset 
 
@@ -90,8 +123,6 @@ permalink: /form/
 @fieldset-legend-color: @grey;
 ```
 
-{% example html %}
-
 <form role="form">
   <fieldset>
     <legend>Login</legend>
@@ -103,7 +134,16 @@ permalink: /form/
   </fieldset>
 </form>
 
-{% endexample %}
+```html
+<fieldset>
+  <legend>Login</legend>
+  <label for="fieldset-email">Email</label>
+  <input type="email" id="fieldset-email" placeholder="Enter Email">
+  <label for="fieldset-password">Password</label>
+  <input type="password" id="fieldset-password" placeholder="Enter Password">
+  <button type="submit" class="button">Submit</button>
+</fieldset>
+```
 
 
 ## Form Messages
@@ -124,8 +164,6 @@ permalink: /form/
 @form-message-info-color: @info;
 ```
 
-{% example html %}
-
 <form role="form">
   <label for="form-message-title">Title</label>
   <input type="text" id="form-message-title" placeholder="Title">
@@ -145,7 +183,23 @@ permalink: /form/
   <button type="submit" class="button">Submit</button>
 </form>
 
-{% endexample %}
+```html
+<label for="form-message-title">Title</label>
+<input type="text" id="form-message-title" placeholder="Title">
+<p class="form-message">Form message</p>
+<label for="form-message-first-name">First Name</label>
+<input type="text" id="form-message-first-name" placeholder="Enter First Name">
+<p class="form-message success">Form message success</p>
+<label for="form-message-last-name">Last Name</label>
+<input type="text" id="form-message-last-name" placeholder="Enter Last Name">
+<p class="form-message error">Form message error</p>
+<label for="form-message-email">Email</label>
+<input type="email" id="form-message-email" placeholder="Enter Email">
+<p class="form-message warning">Form message warning</p>
+<label for="form-message-password">Password</label>
+<input type="password" id="form-message-password" placeholder="Enter Password">
+<p class="form-message info">Form message info</p>
+```
 
 ## Input
 
@@ -196,8 +250,6 @@ permalink: /form/
 @textarea-padding: 12px 16px;
 @textarea-line-height: @line-height-medium;
 ```
-
-{% example html %}
 
 <form role="form">
 
@@ -257,7 +309,61 @@ permalink: /form/
 
 </form>
 
-{% endexample %}
+```html
+<label for="input-text">Text Input</label>
+<input type="text" id="input-text" placeholder="Text">
+
+<label for="input-inverse">Inverse Input</label>
+<input class="input-inverse" type="text" id="input-inverse" placeholder="Inverse">
+
+<label for="input-disabled">Disabled</label>
+<input type="text" id="input-disabled" placeholder="Disabled" disabled="">
+
+<label for="input-email">Email Input</label>
+<input type="email" id="input-email" placeholder="Email">
+
+<label for="input-search">Search Input</label>
+<input type="search" id="input-search" placeholder="Search">
+
+<label for="input-tel">Telephone Input</label>
+<input type="tel" id="input-tel" placeholder="Telephone">
+
+<label for="input-url">URL Input</label>
+<input type="url" id="input-url" placeholder="http://">
+
+<label for="input-password">Password Input</label>
+<input type="password" id="input-password" value="password">
+
+<label for="input-file">File Input</label>
+<input type="file" id="input-file">
+
+<label for="input-textarea">Textarea</label>
+<textarea id="input-textarea" cols="30" rows="5" placeholder="Textarea text"></textarea>
+
+<label for="input-number">Number Input</label>
+<input type="number" id="input-number" min="0" max="10" placeholder="Enter a number form 0 to 10">
+
+<label for="input-date">Date Input</label>
+<input type="date" id="input-date">
+
+<label for="input-month">Month Input</label>
+<input type="month" id="input-month">
+
+<label for="input-week">Week Input</label>
+<input type="week" id="input-week">
+
+<label for="input-datetime">Datetime Input</label>
+<input type="datetime" id="input-datetime" placeholder="Enter a datetime string">
+
+<label for="input-datetime-local">Datetime-local Input</label>
+<input type="datetime-local" id="input-datetime-local">
+
+<input id="input-checkbox" type="checkbox" name="checkbox" value="Checkbox Input">
+<label for="input-checkbox">Checkbox Input</label>
+
+<input id="input-radio" type="radio" name="radio" value="Radio Input">
+<label for="input-radio">Radio Input</label>
+```
 
 ## Input Indicators
 
@@ -268,8 +374,6 @@ permalink: /form/
 @input-success-color: @success;
 @input-info-color: @info;
 ```
-
-{% example html %}
 
 <form role="form">
 
@@ -287,7 +391,19 @@ permalink: /form/
 
 </form>
 
-{% endexample %}
+```html
+<label for="error">Input Error</label>
+<input class="error" type="text" id="error" value="Input Error">
+
+<label for="warning">Input Warning</label>
+<input class="warning" type="text" id="warning" value="Input Warning">
+
+<label for="success">Input Success</label>
+<input class="success" type="text" id="success" value="Input Success">
+
+<label for="info">Input Info</label>
+<input class="info" type="text" id="info" value="Input Info">
+```
 
 ## Input Sizes
 
@@ -318,8 +434,6 @@ permalink: /form/
 @input-xsmall-font-size: @font-size-xsmall;
 ```
 
-{% example html %}
-
 <form role="form">
   
   <input class="input-xlarge" type="text" placeholder="Input Extra Large">
@@ -330,13 +444,17 @@ permalink: /form/
 
 </form>
 
-{% endexample %}
+```html
+<input class="input-xlarge" type="text" placeholder="Input Extra Large">
+<input class="input-large" type="text" placeholder="Input Large">
+<input class="input-medium" type="text" placeholder="Input Medium">
+<input class="input-small" type="text" placeholder="Input Small">
+<input class="input-xsmall" type="text" placeholder="Input Extra Small">
+```
 
 ## Input Group
 
 ### Input Group
-
-{% example html %}
 
 <div class="input-group">
   <input type="text" placeholder="Enter Keyword...">
@@ -345,11 +463,16 @@ permalink: /form/
   </span>
 </div>
 
-{% endexample %}
+```html
+<div class="input-group">
+  <input type="text" placeholder="Enter Keyword...">
+  <span class="input-group-button">
+    <button class="button" type="submit">Submit</button>
+  </span>
+</div>
+```
 
 ### Input Group Search
-
-{% example html %}
 
 <div class="input-group input-group-search">
   <input type="search" placeholder="Search">
@@ -358,11 +481,16 @@ permalink: /form/
   </span>
 </div>
 
-{% endexample %}
+```html
+<div class="input-group input-group-search">
+  <input type="search" placeholder="Search">
+  <span class="input-group-button">
+    <button class="button" type="submit">Search</button>
+  </span>
+</div>
+```
 
 ## Input Group Sizes
-
-{% example html %}
 
 <form role="form">
   
@@ -399,7 +527,38 @@ permalink: /form/
 
 </form>
 
-{% endexample %}
+```html  
+<div class="input-group">
+  <input class="input-xlarge" type="text" placeholder="Input Group Extra Large">
+  <span class="input-group-button input-group-button-xlarge">
+    <button class="button" type="submit">Submit</button>
+  </span>
+</div>
+<div class="input-group">
+  <input class="input-large" type="text" placeholder="Input Group Large">
+  <span class="input-group-button input-group-button-large">
+    <button class="button" type="submit">Submit</button>
+  </span>
+</div>
+<div class="input-group">
+  <input class="input-medium" type="text" placeholder="Input Group Medium">
+  <span class="input-group-button input-group-button-medium">
+    <button class="button" type="submit">Submit</button>
+  </span>
+</div>
+<div class="input-group">
+  <input class="input-small" type="text" placeholder="Input Group Small">
+  <span class="input-group-button input-group-button-small">
+    <button class="button" type="submit">Submit</button>
+  </span>
+</div>
+<div class="input-group">
+  <input class="input-xsmall" type="text" placeholder="Input Group Extra Small">
+  <span class="input-group-button input-group-button-xsmall">
+    <button class="button" type="submit">Submit</button>
+  </span>
+</div>
+```
 
 ## Control
 
@@ -440,8 +599,6 @@ permalink: /form/
 
 ### Checkbox
 
-{% example html %}
-
 <form role="form">
   
   <label class="control checkbox">
@@ -452,11 +609,15 @@ permalink: /form/
 
 </form>
 
-{% endexample %}
+```html
+<label class="control checkbox">
+  <input type="checkbox" name="checkbox">
+  <span class="control-indicator"></span>
+  <span class="control-label">Checkbox</span>
+</label>
+```
 
 ### Radio
-
-{% example html %}
 
 <form role="form">
   
@@ -468,12 +629,16 @@ permalink: /form/
 
 </form>
 
-{% endexample %}
+```html
+<label class="control radio">
+  <input type="radio" name="radio">
+  <span class="control-indicator"></span>
+  <span class="control-label">Radio</span>
+</label>
+```
 
 ### Checkbox Inline
 
-{% example html %}
-
 <form role="form">
   
   <label class="control control-inline checkbox">
@@ -494,12 +659,26 @@ permalink: /form/
 
 </form>
 
-{% endexample %}
+```html
+<label class="control control-inline checkbox">
+  <input type="checkbox" name="checkbox">
+  <span class="control-indicator"></span>
+  <span class="control-label">Checkbox</span>
+</label>
+<label class="control control-inline checkbox">
+  <input type="checkbox" name="checkbox">
+  <span class="control-indicator"></span>
+  <span class="control-label">Checkbox</span>
+</label>
+<label class="control control-inline checkbox">
+  <input type="checkbox" name="checkbox">
+  <span class="control-indicator"></span>
+  <span class="control-label">Checkbox</span>
+</label>
+```
 
 ### Radio Inline
 
-{% example html %}
-
 <form role="form">
   
   <label class="control control-inline radio">
@@ -520,7 +699,23 @@ permalink: /form/
 
 </form>
 
-{% endexample %}
+```html
+<label class="control control-inline radio">
+  <input type="radio" name="radio">
+  <span class="control-indicator"></span>
+  <span class="control-label">Radio</span>
+</label>
+<label class="control control-inline radio">
+  <input type="radio" name="radio">
+  <span class="control-indicator"></span>
+  <span class="control-label">Radio</span>
+</label>
+<label class="control control-inline radio">
+  <input type="radio" name="radio">
+  <span class="control-indicator"></span>
+  <span class="control-label">Radio</span>
+</label>
+```
 
 ## Select
 
@@ -551,8 +746,6 @@ permalink: /form/
 
 ### Select
 
-{% example html %}
-
 <form role="form">
   
   <label class="select" for="select">
@@ -565,11 +758,17 @@ permalink: /form/
 
 </form>
 
-{% endexample %}
+```html
+<label class="select" for="select">
+  <select id="select">
+    <option>Select Field</option>
+    <option value="1">Option 01</option>
+    <option value="2">Option 02</option>
+  </select>
+</label>
+```
 
 ### Select Inverse
-
-{% example html %}
 
 <form role="form">
   
@@ -583,7 +782,15 @@ permalink: /form/
 
 </form>
 
-{% endexample %}
+```html
+<label class="select select-inverse" for="select-inverse">
+  <select id="select-inverse">
+    <option>Select Field</option>
+    <option value="1">Option 01</option>
+    <option value="2">Option 02</option>
+  </select>
+</label>
+```
 
 ## Select Sizes
 
@@ -613,8 +820,6 @@ permalink: /form/
 @select-xsmall-height: @input-xsmall-height;
 @select-xsmall-font-size: @input-xsmall-font-size;
 ```
-
-{% example html %}
 
 <form role="form">
   
@@ -656,4 +861,40 @@ permalink: /form/
 
 </form>
 
-{% endexample %}
+```html 
+<label class="select select-xlarge" for="select-xlarge">
+  <select id="select-xlarge">
+    <option>Select Extra Large</option>
+    <option value="1">Option 01</option>
+    <option value="2">Option 02</option>
+  </select>
+</label>
+<label class="select select-large" for="select-large">
+  <select id="select-large">
+    <option>Select Large</option>
+    <option value="1">Option 01</option>
+    <option value="2">Option 02</option>
+  </select>
+</label>
+<label class="select select-medium" for="select-medium">
+  <select id="select-medium">
+    <option>Select Medium</option>
+    <option value="1">Option 01</option>
+    <option value="2">Option 02</option>
+  </select>
+</label>
+<label class="select select-small" for="select-small">
+  <select id="select-small">
+    <option>Select Small</option>
+    <option value="1">Option 01</option>
+    <option value="2">Option 02</option>
+  </select>
+</label>
+<label class="select select-xsmall" for="select-xsmall">
+  <select id="select-xsmall">
+    <option>Select Extra Small</option>
+    <option value="1">Option 01</option>
+    <option value="2">Option 02</option>
+  </select>
+</label>
+```
