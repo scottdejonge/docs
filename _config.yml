@@ -2,7 +2,7 @@
 title: Turret
 email: scottdj@bigfish.tv
 description: Turret is a responsive front-end framework for accessible and semantic website development.Turret defines base styles for all HTML5 native web elements and includes a simple and intuitive grid system for rapid responsive website development
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "/docs/" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: bigfishtvturret
 github_username:  bigfishtv
