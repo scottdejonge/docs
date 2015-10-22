@@ -58,8 +58,7 @@ permalink: /form/
 
 ## Labels 
 
-{% highlight scss %}
-
+```scss
 // Label
 @label-margin: 15px 0px;
 @label-font-family: @semibold-font-family;
@@ -67,8 +66,7 @@ permalink: /form/
 @label-font-size: 1.2;
 @label-color: @dark;
 @label-line-height: @line-height-medium;
-
-{% endhighlight %}
+```
 
 {% example html %}
 
@@ -80,8 +78,7 @@ permalink: /form/
 
 ## Fieldset 
 
-{% highlight scss %}
-
+```scss
 // Fieldset
 @fieldset-margin: 0;
 @fieldset-padding: 20px;
@@ -91,8 +88,7 @@ permalink: /form/
 @fieldset-legend-padding: 10px;
 @fieldset-legend-font-size: @font-size-medium;
 @fieldset-legend-color: @grey;
-
-{% endhighlight %}
+```
 
 {% example html %}
 
@@ -112,8 +108,7 @@ permalink: /form/
 
 ## Form Messages
 
-{% highlight scss %}
-
+```scss
 // Form Message
 @form-message-margin: @label-margin;
 @form-message-font-family: @paragraph-font-family;
@@ -127,8 +122,7 @@ permalink: /form/
 @form-message-warning-color: @warning;
 @form-message-success-color: @success;
 @form-message-info-color: @info;
-
-{% endhighlight %}
+```
 
 {% example html %}
 
@@ -155,8 +149,7 @@ permalink: /form/
 
 ## Input
 
-{% highlight scss %}
-
+```scss
 // Input
 @input-height: @height-medium;
 @input-margin: @label-margin;
@@ -202,8 +195,7 @@ permalink: /form/
 // Textarea
 @textarea-padding: 12px 16px;
 @textarea-line-height: @line-height-medium;
-
-{% endhighlight %}
+```
 
 {% example html %}
 
@@ -269,15 +261,13 @@ permalink: /form/
 
 ## Input Indicators
 
-{% highlight scss %}
-
+```scss
 // Indicators
 @input-error-color: @error;
 @input-warning-color: @warning;
 @input-success-color: @success;
 @input-info-color: @info;
-
-{% endhighlight %}
+```
 
 {% example html %}
 
@@ -301,8 +291,7 @@ permalink: /form/
 
 ## Input Sizes
 
-{% highlight scss %}
-
+```scss
 // Input Extra Large
 @input-xlarge-padding: 0 30px;
 @input-xlarge-height: @height-xlarge;
@@ -327,8 +316,7 @@ permalink: /form/
 @input-xsmall-padding: 0 8px;
 @input-xsmall-height: @height-xsmall;
 @input-xsmall-font-size: @font-size-xsmall;
-
-{% endhighlight %}
+```
 
 {% example html %}
 
@@ -415,8 +403,7 @@ permalink: /form/
 
 ## Control
 
-{% highlight scss %}
-
+```scss
 // Control
 @control-margin: @input-margin;
 @control-padding: 0px 0px 0px 1.5em;
@@ -449,8 +436,7 @@ permalink: /form/
 
 // Radio
 @radio-border-radius: 50%;
-
-{% endhighlight %}
+```
 
 ### Checkbox
 
@@ -538,8 +524,7 @@ permalink: /form/
 
 ## Select
 
-{% highlight scss %}
-
+```scss
 // Select
 @select-margin: @input-margin;
 @select-padding: @input-padding;
@@ -562,8 +547,7 @@ permalink: /form/
 @select-inverse-border: @input-inverse-border;
 @select-inverse-background: @input-inverse-background;
 @select-inverse-arrow-background: @white;
-
-{% endhighlight %}
+```
 
 ### Select
 
@@ -603,8 +587,7 @@ permalink: /form/
 
 ## Select Sizes
 
-{% highlight scss %}
-
+```scss
 // Select Extra Large
 @select-xlarge-padding: @input-xlarge-padding;
 @select-xlarge-height: @input-xlarge-height;
@@ -629,8 +612,7 @@ permalink: /form/
 @select-xsmall-padding: @input-xsmall-padding;
 @select-xsmall-height: @input-xsmall-height;
 @select-xsmall-font-size: @input-xsmall-font-size;
-
-{% endhighlight %}
+```
 
 {% example html %}
 
