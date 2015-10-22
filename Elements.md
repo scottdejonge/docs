@@ -6,15 +6,3 @@ permalink: /elements/
 ---
 
 ## Title
-
-{% highlight scss %}
-
-
-
-{% endhighlight %}
-
-{% example html %}
-
-
-
-{% endexample %}
