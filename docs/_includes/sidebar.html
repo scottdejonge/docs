@@ -11,7 +11,7 @@
         {% assign active = 'active' %}
       {% endif %}
 
-      <a class="{{ active }}" href="{{ site.baseurl }}/{{ group.title | downcase | replace: ' ', '-' }}/">{{ group.title }}</a>
+      <a class="{{ active }}" href="/docs/{{ group.title | downcase | replace: ' ', '-' }}/">{{ group.title }}</a>
 
     {% endfor %}
   </nav>
