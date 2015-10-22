@@ -2,7 +2,7 @@
 layout: docs
 title: Getting Started
 description: A introduction to how to get started, download and use Turret including usage and examples.
-permalink: /getting-started/
+permalink: /docs/getting-started/
 ---
 
 ## Download

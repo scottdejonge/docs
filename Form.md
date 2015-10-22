@@ -2,7 +2,7 @@
 layout: docs
 title: Form
 description: A guide to Turret's default styling of form elements including examples of input types and sizes, input-groups, radio and checkbox controls, and selects.
-permalink: /form/
+permalink: /docs/form/
 ---
 
 ## Form Examples

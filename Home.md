@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Home
-permalink: /home/
+permalink: /docs/home/
 ---
 
 Turret is a styles and browser behaviour normalisation framework for rapid development of responsive and accessible websites.
